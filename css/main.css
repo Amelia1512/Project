@@ -1,0 +1,311 @@
+header {
+    background-color: rgb(247, 231, 233);
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+nav {
+    font-size: 28px;
+}
+
+.nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+.nav_bar_about {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 8px 40px; 
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    text-decoration: none;
+    color:#3C68EE;
+}
+
+#inactive:visited {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color:rgba(247, 231, 233, 0.63);
+    background-image: url("../images/background.png");
+    height: 1000px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.largebackground {
+    background-image: url("../images/background.png");
+    height:100vh;
+}
+.stat_titles {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: black;
+}
+
+.stat_links:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.stat_links:hover {
+    color:#3C68EE;
+}
+
+
+
+p {
+    font-family: 'Nunito', sans-serif;
+    padding: 500px 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icons {
+    padding: 30px 50px 20px;
+    display: inline-block
+}
+
+footer {
+    background-color: #f7e7e9;
+    height: 150px; 
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.footer_row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact_footer {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+/* through time css */
+/* Tooltip container */
+
+div.google-visualization-tooltip {
+    position:relative;
+    display: inline-block;
+    background-color: #f7e8ea;
+    width: 450px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Tooltip heading */
+
+.tooltipheading {
+    font-size: 50px;
+    color: black;
+}
+
+/* Tooltip years */
+
+.tooltipyears {
+    color: grey;
+
+}
+
+/* Tooltip text */
+
+.tooltiptext {
+    font-size: larger;
+}
+
+/* Timeline styling */
+
+.timeline {
+    padding-top:100px;
+    margin-left:50px; 
+    margin-right: 50px;
+}
+
+/* Tooltip images */
+
+.ada_image {
+    width: 200px;
+    height: 300px;
+}
+
+.bletchley_image {
+    width: 400px;
+    height: 300px;
+}
+
+.jean_image {
+    width: 250px;
+    height: 300px;
+}
+
+.edith_image {
+    width: 200px;
+    height: 300px;
+}
+
+.grace_image {
+    width: 400px;
+    height: 300px;
+}
+
+.evelyn_image {
+    width: 400px;
+    height: 300px;
+}
+
+.mary_image {
+    width: 300px;
+    height: 300px;
+}
+
+.karen_image {
+    width: 250px;
+    height: 300px;
+}
+
+.radia_image {
+    width: 250px;
+    height: 350px;
+}
+
+.carol_image {
+    width: 350px;
+    height: 400px;
+}
+
+.frances_image {
+    width: 300px;
+    height: 300px;
+}
+
+.chieko_image {
+    width: 300px;
+    height: 400px;
+}
+
+.sage_image {
+    width: 300px;
+    height: 300px;
+}
+
+.whitney_image {
+    width: 350px;
+    height: 300px;
+}
+
+/* inspire.html */
+
+.inspire:hover {
+    color:#3C68EE;
+}
+
+body {
+    background-color: #f7e7e9;
+}
+
+.columns {
+    width: 800px;
+    min-height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    padding: 160px;
+}
+.padding {
+    padding: 160px;
+}
+
+/* paygap.html */
+
+#chart_div {
+    padding-top: 200px;
+    padding-bottom: 450px;
+    align-items: center;
+    margin: 20px;
+}
+
+/* About page */
+
+table, th, td {
+    /* border: 1px solid black; */
+    column-width: 250px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+}
+
+th {
+    font-size: 21px;
+}
+
+td {
+    font-size: 16px;
+}
+
+.abouttable {
+    padding-bottom: 250px;
+    padding-top: 120px;
+}
+
+.Natalie_image {
+    height: 216px;
+}
+
+.Jenny_image {
+    height: 216px;
+}
+
+.Amelia_image {
+    height: 216px;
+}

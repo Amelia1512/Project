@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How can we inspire more women into STEM?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href= "css/main.css" rel="stylesheet"></link>
+</head>
+
+<body>
+    <header>
+      <h1>How do we inspire more women into tech?</h1>  
+      <nav>
+          <div class="nav_bar">
+            <ul>
+              <li><a class="inspire" href="index.html">Home</a></li>
+              <li><a class="inspire" href="about.html">About</a></li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+
+    <section>
+      <table class="columns">
+          <tr>
+             <td><div id="role_model_chart_div" style="border: 1px solid lightgray"></div></td>
+             <td><div id="reasons_chart_div" style="border: 1px solid lightgray"></div></td>
+             <td><div id="actions_chart_div" style="border: 1px solid lightgray"></div></td>
+          </tr>
+      </table>
+    </section>
+
+    <div class="container">
+      <span class="padding"></span>
+    </div>
+  
+    <footer>
+        <div class="footer_row">
+            <a href="https://www.twitter.com/" target="_blank">
+            <img src="images/twitter.svg" alt="twitter" width="20" height="20" class="icons"></a>
+            
+            <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/insta.svg" alt="instagram" width="20" height="20" class="icons"></a>
+            
+            <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin.svg" alt="linkedin" width="20" height="20" class="icons"></a>
+        </div>
+    
+        <div class="contact_footer">
+            <ul>
+                <li>020 3687 1004</li>
+                <li>info@wit.co.uk</li>
+                <li>Tempest Bldg, Tithebarn St, Liverpool, L2 2DT</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+   
+ // Draw the pie chart for role models when Charts is loaded.
+ google.charts.setOnLoadCallback(drawRoleModelChart);
+
+// Draw the pie chart for the reasons when Charts is loaded.
+google.charts.setOnLoadCallback(drawReasonsChart);
+
+  // Draw the pie chart for the actions when Charts is loaded.
+google.charts.setOnLoadCallback(drawActionsChart);
+
+// Callback that draws the pie chart for role models.
+function drawRoleModelChart() {
+
+  // Create the data table for role models.
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Percentage');
+  data.addColumn('number', 'Female Role Models in Tech');
+   data.addRows([
+     ['Women who COULD NOT name a famous female in tech', 78],
+     ['Women who COULD name a famous female in tech', 22],
+   ]);
+
+  // Set options for role models pie chart.
+  var options = {title:'Female Role Models in Tech',
+                  width:400,
+                  height:300,
+                  'is3D': true,
+                  'colors': ['lightCoral', 'lightSeagreen',],
+                  legend: 'none',
+                };
+
+  // Instantiate and draw the chart for role models.
+  var chart = new google.visualization.PieChart(document.getElementById('role_model_chart_div'));
+  chart.draw(data, options);
+}
+
+// Callback that draws the pie chart for reasons.
+function drawReasonsChart() {
+
+  // Create the data table for reasons.
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Percentage');
+  data.addColumn('number', 'Reasons why women do not choose tech');
+  data.addRows([
+    ['Flexibility', 35],
+    ['Training', 15],
+    ['Inclusion', 50],
+  ]);
+
+  // Set options for reasons pie chart.
+  var options = {title:'Why Not Tech?',
+                 width:400,
+                 height:300,
+                 'is3D': true,
+                 'colors': ['lightSeagreen', 'lightSlateGray', 'lightCoral',],
+                 legend: 'none',
+                };
+
+  // Instantiate and draw the chart for reasons.
+  var chart = new google.visualization.PieChart(document.getElementById('reasons_chart_div'));
+  chart.draw(data, options);
+}
+
+ // Callback that draws the pie chart for actions.
+ function drawActionsChart() {
+
+// Create the data table for actions.
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Percentage');
+data.addColumn('number', 'Actions needed to inspire women');
+data.addRows([
+['Returnships', 10],
+['Flexibility in job ad', 30],
+['Female tech role models', 20],
+['Leadership opportunities', 40],
+]);
+
+// Set options for actions pie chart.
+var options = {title:'What Actions Are Needed?',
+         width:400,
+         height:300,
+         'is3D': true,
+         'colors': ['lightSeaGreen', 'lightSkyBlue', 'lightSlateGray', 'LightCoral',],
+         legend: 'none',
+        };
+
+// Instantiate and draw the chart for actions.
+var chart = new google.visualization.PieChart(document.getElementById('actions_chart_div'));
+chart.draw(data, options);
+ }
+</script>
+<script href="./js/main.js"></script>
+</html>
